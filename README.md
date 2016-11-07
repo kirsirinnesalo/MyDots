@@ -1,11 +1,10 @@
-
-#MyDots
+# MyDots
 
 Personal dot files
 
-##Emacs
+## Emacs
 
-###init.el
+### init.el
 
 Emacs conf all in one file
 
@@ -19,7 +18,7 @@ Emacs conf all in one file
 
 <kbd>M-x package-install RET [markdown-mode](https://github.com/jrblevin/markdown-mode) RET</kbd>
 
-###myline.el
+### myline.el
 Mode line configuration.
 Faces are mainly copied from [Amit](http://amitp.blogspot.fi/2011/08/emacs-custom-mode-line.html).
 
@@ -31,21 +30,21 @@ I have `global-linum-mode` enabled in `init.el` so myline does not show line num
 
 ![Myline screenshot](.emacs.d/lisp/myline-screenshot.png)
 
-##Git
+## Git
 
-###.gitconfig
+### .gitconfig
 
 * Use `emacs` as defaut editor
 * Mercurial style `in` and `out` aliases
 * Pretty log
 
-###.gitignore
+### .gitignore
 
 Basic ignore patterns for SVN, Eclipse, Netbeans, Idea, Emacs and so on...
 
-##Mercurial
+## Mercurial
 
-###.hgrc
+### .hgrc
 
 * Use `emacs` as default editor
 * Lots of extensions
