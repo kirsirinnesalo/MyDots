@@ -1,0 +1,42 @@
+[user]
+	name = Kirsi Rinnesalo
+	email = kirsi.rinnesalo@gmail.com
+
+[core]
+        excludesfile = ~/.gitignore
+        editor = /usr/bin/emacs
+        quotepath = false
+
+[alias]
+        st = status -sb
+        ci = commit
+        log --graph --pretty="tformat:%C(yellow)%h%Creset\\ %Cgreen(%ar)%Creset\\ %C(blue)<%an>%Creset\\ %C(red)%d%Creset\\ %s"
+        in = !git fetch && git l ..origin/master
+        out = !git fetch && git l origin/master..
+
+[color]
+        diff = auto
+        status = auto
+        branch = auto
+        interactive = auto
+
+[color "branch"]
+        current = green bold
+        local = blue bold
+        remote = magenta
+        upstream = magenta bold
+
+[color "diff"]
+        meta = black bold
+        frag = magenta bold
+        old = red bold
+        new = green bold
+
+[color "status"]
+        header = black bold
+        added = green bold
+        changed = magenta bold
+        untracked = red
+        branch = blue bold
+        nobranch = red bold
+        unmerged = red bold

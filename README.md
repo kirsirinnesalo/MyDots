@@ -31,3 +31,15 @@ I have `global-linum-mode` enabled in `init.el` so myline does not show line num
 
 ![Myline screenshot](.emacs.d/lisp/myline-screenshot.png)
 
+##Git
+
+###.gitconfig
+
+* Use `emacs` as defaut editor
+* Mercurial style `in` and `out` aliases
+* Pretty log
+
+###.gitignore
+
+Basic ignore patterns for SVN, Eclipse, Netbeans, Idea, Emacs and so on...
+

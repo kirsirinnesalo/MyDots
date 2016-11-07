@@ -1,0 +1,16 @@
+.svn
+target
+build/
+.project
+.settings
+.classpath
+*.log
+nbactions.xml
+nb-configuration.xml
+nbprojects/
+*.iml
+.idea
+/out/
+*~
+\#*
+.\#*
