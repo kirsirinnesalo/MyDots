@@ -43,3 +43,10 @@ I have `global-linum-mode` enabled in `init.el` so myline does not show line num
 
 Basic ignore patterns for SVN, Eclipse, Netbeans, Idea, Emacs and so on...
 
+##Mercurial
+
+###.hgrc
+
+* Use `emacs` as default editor
+* Lots of extensions
+* Status aliases for queues

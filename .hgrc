@@ -1,0 +1,37 @@
+[paths]
+default =
+
+[ui]
+username=Kirsi Rinnesalo <kirsi.rinnesalo@gmail.com>
+verbose=false
+editor=emacs -nw
+
+[auth]
+
+[hostfingerprints]
+
+[extensions]
+purge=
+transplant=
+rebase=
+bookmarks=
+mq=
+color=
+hgext.convert=
+hgext.hbisect=
+pager=
+record=
+graphlog=
+
+[pager]
+pager=LESS='FSRX' less
+ignore=version,update,serve,record
+
+[bookmarks]
+track.current=True
+
+[hooks]
+
+[alias]
+qstatus = status --rev qparent:qtip
+qst = qstatus
