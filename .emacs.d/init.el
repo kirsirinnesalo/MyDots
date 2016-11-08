@@ -25,7 +25,7 @@
 ;;;;;;;;;;;;;;
 (if (display-graphic-p)
     (load-theme 'monokai t)
-  (load-theme 'tangotango))
+  (load-theme 'tangotango t))
 
 (load-library "myline")
 
