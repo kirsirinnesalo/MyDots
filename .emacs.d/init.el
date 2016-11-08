@@ -101,6 +101,8 @@
 ;;;;;;;;;;;;;;;
 ;; keys
 
+(delete-selection-mode)
+
 (when (display-graphic-p)
   (global-set-key "\C-xh" nil)
   (global-set-key "\C-a" 'mark-whole-buffer)
@@ -108,12 +110,16 @@
   (global-set-key "\C-x\C-c" 'dont-kill-emacs)
   )
 
-(delete-selection-mode)
-
-(global-set-key (kbd "M-<left>")  'windmove-left)
-(global-set-key (kbd "M-<right>") 'windmove-right)
-(global-set-key (kbd "M-<up>")    'windmove-up)
-(global-set-key (kbd "M-<down>")  'windmove-down)
+(cond ((eq system-type 'windows-nt)
+       (global-set-key (kbd "M-<left>")  'windmove-left)
+       (global-set-key (kbd "M-<right>") 'windmove-right)
+       (global-set-key (kbd "M-<up>")    'windmove-up)
+       (global-set-key (kbd "M-<down>")  'windmove-down))
+      ((eq system-type 'gnu/linux)
+       (global-set-key (kbd "M-c <left>")  'windmove-left)
+       (global-set-key (kbd "M-c <right>") 'windmove-right)
+       (global-set-key (kbd "M-c <up>")    'windmove-up)
+       (global-set-key (kbd "M-c <down>")  'windmove-down)))
 
 (global-set-key (kbd "C-x <up>")    'enlarge-window)
 (global-set-key (kbd "C-x <down>")  'shrink-window)
