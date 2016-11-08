@@ -10,7 +10,8 @@
                          ("org" . "http://orgmode.org/elpa/")))
 (package-initialize)
 
-(require 'use-package)
+(eval-when-compile
+  (require 'use-package))
 
 (let ((default-directory (concat user-emacs-directory "lisp")))
   (normal-top-level-add-to-load-path '("."))
@@ -76,8 +77,8 @@
 ;;      display-time-day-and-date t)
 ;;(display-time)
 
-;;(setq line-number-mode t)
-(global-linum-mode t)
+(global-linum-mode t);(setq line-number-mode t)
+;;in terminal add little space after linum
 (when (not (display-graphic-p))
   (defun linum-format-func (line)
     (let ((w (length (number-to-string (count-lines (point-min) (point-max))))))
