@@ -1,6 +1,6 @@
 ;;;;;;;;;;;;;;;
 ;; dot emacs
-;;;;;;;;;;;;;;;
+
 (setq user-full-name "Kirsi Rinnesalo"
       user-mail-address "kirsi.rinnesalo@gmail.com")
 
@@ -22,7 +22,7 @@
 
 ;;;;;;;;;;;;;;
 ;; theme
-;;;;;;;;;;;;;;
+
 (if (display-graphic-p)
     (load-theme 'monokai t)
   (load-theme 'tangotango t))
@@ -52,7 +52,7 @@
 ;;;;;;;;;;;;;;;
 ;; ui
 
-(when window-system
+(when (display-graphic-p)
   (set-frame-height (selected-frame) 43)
   (set-frame-width (selected-frame) 140)
   (set-frame-position (selected-frame) 140 50))
@@ -101,7 +101,7 @@
 ;;;;;;;;;;;;;;;
 ;; keys
 
-(when window-system
+(when (display-graphic-p)
   (global-set-key "\C-xh" nil)
   (global-set-key "\C-a" 'mark-whole-buffer)
   (global-set-key "\C-x\M-x" 'save-buffers-kill-emacs)
