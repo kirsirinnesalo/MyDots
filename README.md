@@ -24,7 +24,7 @@ Faces are mainly copied from [Amit](http://amitp.blogspot.fi/2011/08/emacs-custo
 
 Format:
 
-	column status directory/filename [filesize] [modes] date time (uptime)
+	column status user-login-name@system-name:directory/filename [filesize] vc-mode [modes] date time (uptime)
 
 I have `global-linum-mode` enabled in `init.el` so myline does not show line numbers.
 

@@ -19,7 +19,11 @@
            (propertize " RO " 'face 'myline-read-only-face))
           (t "    ")))
    " "
-   (:propertize (:eval (shortdir default-directory 30))
+   (:eval user-login-name)
+   "@"
+   (:eval system-name)
+   ":"
+   (:propertize (:eval (shortdir default-directory 20))
                 face mode-line-folder-face)
    (:propertize "%b" face myline-filename-face)
    " ["
@@ -27,7 +31,7 @@
    "]"
    " %n "
    (vc-mode vc-mode)
-   "["
+   " ["
    (:propertize mode-name face myline-mode-face)
    "] ["
    (:eval (propertize (format-mode-line minor-mode-alist)
