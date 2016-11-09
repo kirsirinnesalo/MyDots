@@ -30,7 +30,7 @@
    (:propertize "%I" 'face 'font-lock-constact-face)
    "]"
    " %n "
-   (vc-mode vc-mode)
+   (:propertize (vc-mode vc-mode) face myline-vc-mode-face)
    " ["
    (:propertize mode-name face myline-mode-face)
    "] ["
@@ -62,6 +62,7 @@
 (make-face 'myline-read-only-face)
 (make-face 'myline-folder-face)
 (make-face 'myline-filename-face)
+(make-face 'myline-vc-mode-face)
 (make-face 'myline-mode-face)
 (make-face 'myline-minor-mode-face)
 (make-face 'myline-process-face)
@@ -97,6 +98,9 @@
     :inherit 'mode-line-face
     :foreground "#eab700"
     :weight 'bold)
+(set-face-attribute 'myline-vc-mode-face nil
+    :inherit 'mode-line-face
+    :foreground "green3")
 (set-face-attribute 'myline-mode-face nil
     :inherit 'mode-line-face
     :foreground "gray80")
