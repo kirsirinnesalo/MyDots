@@ -27,3 +27,5 @@ user_pref("mailnews.default_sort_order", 1);
 // 22 = Thread
 user_pref("mailnews.default_sort_type", 22);
 
+//Show folder pane columns
+user_pref("mail.folderpane.showColumns", true);
