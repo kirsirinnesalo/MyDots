@@ -1,16 +1,29 @@
-.svn
-target
+
+# builds
+target/
 build/
+out/
+bin/
+
+# eclipse
 .project
 .settings
 .classpath
-*.log
+
+# neatbeans
 nbactions.xml
 nb-configuration.xml
 nbprojects/
+
+# idea
 *.iml
 .idea
-/out/
+
+# emacs
 *~
 \#*
 .\#*
+
+*.log
+.svn
+
