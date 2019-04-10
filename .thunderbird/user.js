@@ -36,3 +36,8 @@ user_pref("mailnews.default_sort_type", 22);
 
 //Show folder pane columns
 user_pref("mail.folderpane.showColumns", true);
+
+// Because of Outlook, don't show the invitation subject prefix
+// https://bugzilla.mozilla.org/show_bug.cgi?id=1251484
+user_pref("calendar.itip.useInvitationSubjectPrefixes", false);
+
