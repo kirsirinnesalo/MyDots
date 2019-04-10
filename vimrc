@@ -104,6 +104,8 @@ set ruler
 
 " show line numbers
 set number
+"set cpoptions+=n
+set norelativenumber
 
 " a bit extra margin to the left
 set foldcolumn=1
@@ -128,7 +130,7 @@ set whichwrap+=<,>,h,l,[,]
 " when searching
 set ignorecase
 set smartcase
-set hlsearch
+"set hlsearch
 "set incsearch
 
 " for regexp
@@ -146,7 +148,7 @@ set tm=500
 
 set expandtab
 set smarttab
-
+set softtabstop=4
 set shiftwidth=4
 set tabstop=4
 
