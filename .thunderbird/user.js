@@ -8,6 +8,13 @@ user_pref("mail.check_all_imap_folders_for_new", true);
 // 3 - User-defined reply header. Use the prefs below in conjunction with this:
 user_pref("mailnews.reply_header_type", 2);
 
+// If you set 3 for the pref above then you may set the following prefs.
+//user_pref("mailnews.reply_header_authorwrote", "%s said the following");
+//user_pref("mailnews.reply_header_ondate", "on %s");
+//user_pref("mailnews.reply_header_separator", " ");
+//user_pref("mailnews.reply_header_colon", ":");
+// The end result will be [authorwrote][separator][ondate][colon]
+
 // Date format
 // 0    No date (10:23 AM)
 // 1    Your system's long* date format (Friday, December 31 2003 10:23 AM)
