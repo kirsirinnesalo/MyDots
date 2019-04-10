@@ -2,8 +2,10 @@
 ;; dot emacs
 
 (setq user-full-name "Kirsi Rinnesalo"
-      user-mail-address "kirsi.rinnesalo@gmail.com")
+      user-mail-address "kirsi.rinnesalo@gmail.com"
+      default-directory "~/")
 
+(require 'package)
 (setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
                          ("melpa" . "http://melpa.org/packages/")
                          ("marmalade" . "https://marmalade-repo.org/packages/")
@@ -11,7 +13,19 @@
 (package-initialize)
 
 (eval-when-compile
-  (require 'use-package))
+  (unless (package-installed-p 'use-package)
+    (package-refresh-contents)
+    (package-install 'use-package))
+  (require 'use-package)
+  (unless (package-installed-p 'monokai-theme)
+    (package-refresh-contents)
+    (package-install 'monokai-theme))
+  (require 'monokai-theme)
+  (unless (package-installed-p 'markdown-mode)
+    (package-refresh-contents)
+    (package-install 'markdown-mode))
+  (require 'markdown-mode))
+
 
 (let ((default-directory (concat user-emacs-directory "lisp")))
   (normal-top-level-add-to-load-path '("."))

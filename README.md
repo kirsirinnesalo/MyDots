@@ -13,10 +13,8 @@ Emacs conf all in one file
 * UI settings
 * [use-package](https://github.com/jwiegley/use-package)
 * [MultiMarkdown](http://fletcherpenney.net/multimarkdown/) for multiple platforms
-
-<kbd>M-x package-install RET [monokai-theme](https://github.com/oneKelvinSmith/monokai-emacs) RET</kbd>
-
-<kbd>M-x package-install RET [markdown-mode](https://github.com/jrblevin/markdown-mode) RET</kbd>
+  * [markdown-mode](https://github.com/jrblevin/markdown-mode)
+* [monokai-theme](https://github.com/oneKelvinSmith/monokai-emacs)
 
 ### myline.el
 Mode line configuration.
